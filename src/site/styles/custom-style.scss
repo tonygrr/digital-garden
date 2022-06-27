@@ -8,7 +8,7 @@ body {
   a {
     text-decoration: none;
     color: #ffbe00;
-    font-family: 'PT Mono';
+    font-family: 'PT Mono', monospace;
     font-weight: 600;
   }
 
@@ -22,7 +22,7 @@ body {
     max-width: 875px;
     margin: auto;
     font-size: 20px;
-    font-family: 'PT Mono';
+    font-family: 'PT Mono', monospace;
     line-height: 1.4;
     color: #d5d5d5;
   }
