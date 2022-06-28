@@ -5,14 +5,20 @@ body {
   a {
     text-decoration: none;
     color: #ffbe00;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    transition: transform 0.25s ease-out;
+  }
+  a.internal-link {
+    text-decoration: underline;
+    color: #ffbe00;
     font-family: 'PT Mono', monospace;
     font-weight: 500;
     transition: transform 0.25s ease-out;
   }
-  a:hover {
-    -webkit-transform: scale(1.1);
+  a.internal-link:hover {
     transform: scale(1.1);
-    border: 1px;
+    background: #f1ce7c3c;
     border-radius: 4px;
   }
 
