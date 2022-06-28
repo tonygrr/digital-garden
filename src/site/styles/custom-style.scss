@@ -6,7 +6,14 @@ body {
     text-decoration: none;
     color: #ffbe00;
     font-family: 'PT Mono', monospace;
-    font-weight: 600;
+    font-weight: 500;
+    transition: transform 0.25s ease-out;
+  }
+  a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 1px;
+    border-radius: 4px;
   }
 
   /* Внутренние недействительные ссылки */
