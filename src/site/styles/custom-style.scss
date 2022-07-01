@@ -219,5 +219,17 @@ body {
     margin-right: 0.1em;
     vertical-align: -0.4em;
   }
+
+  /* Mermaid */
+  .markdown-preview-view pre.mermaid {
+    background: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  /* Codeblock */
+  :not(pre)>code[class*=language-], pre[class*=language-] {
+    background: #2e2e2e;
+  }
 }
   
