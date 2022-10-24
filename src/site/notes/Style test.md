@@ -1,14 +1,28 @@
 ---
-{"dg-publish":true,"permalink":"/style-test/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/style-test/","dgHomeLink":true,"dgPassFrontmatter":false,"dgShowLocalGraph":true,"dgShowBacklinks":true}
 ---
 
 
 # Style test
 
+# Заголовок 1
+
+## Заголовок 2
+
+### Заголовок 3
+
+#### Заголовок 4
+
+##### Заголовок 5
+
+###### Заголовок 6
+
+Размер самого текста тоже интересен
+
 ## Цитаты
 
 > Переход в мир логарифмов сохранил астрономам тысячи лет жизни.
-> 
+>
 > Лапласс
 
 ## Код
@@ -26,7 +40,7 @@ int main() {
 | Столбец 1 | Столбец 2 |
 | --------- | --------- |
 | Строка 1  | Строка 1  |
-| Строка 2  | Строка 2  | 
+| Строка 2  | Строка 2  |
 
 ## Форматирование текста
 
@@ -48,11 +62,7 @@ graph LR
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
-<div class="markdown-embed-title">
 
-
-
-</div>
 
 
 
@@ -90,7 +100,6 @@ graph LR
 3. Задача расчёта стыка П-образного волновода с МПЛ.
 4. Задача расчёта экранированной МПЛ.
 5. Задача расчёта стыка коаксиального кабеля и экранированной МПЛ.
-
 
 ### Теория (изучить)
 
