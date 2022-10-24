@@ -43,16 +43,6 @@ body {
     font-weight: bold;
     color: #f5704c;
   }
-  strong:after {
-    content: "**";
-    color: #666666;
-    font-size: 17px;
-  }
-  strong:before {
-    content: "**";
-    color: #666666;
-    font-size: 17px;
-  }
       
   /* Headers */
   h1 {
@@ -97,46 +87,6 @@ body {
     margin-block-start: 1em;
     margin-block-end: 1em;
   }
-
-  /* Headers hash */
-  h1:before {
-    content: "H1 ";
-    font-family: monospace;
-    font-size: 17px;
-    color: #666666;
-  }
-  h2:before {
-    content: "H2 ";
-    font-family: monospace;
-    font-size: 17px;
-    color: #666666;
-  }
-  h3:before {
-    content: "H3 ";
-    font-family: monospace;
-    font-size: 17px;
-    color: #666666;
-  }
-  h4:before {
-    content: "H4 ";
-    font-family: monospace;
-    font-size: 17px;
-    color: #666666;
-  }
-  h5:before {
-    content: "H5 ";
-    font-family: monospace;
-    font-size: 17px;
-    color: #666666;
-  }
-  h6:before {
-    content: "H6 ";
-    font-family: monospace;
-    font-size: 17px;
-    color: #666666;
-  }
-
-  
   
   /* Headers autonimbering */
   /* h2:before {
@@ -246,16 +196,6 @@ body {
   /* Italic */
   em {
     color: #ede482;
-  }
-  em:after {
-    content: "*"
-    color: #666666;
-    font-size: 17px;
-  }
-  em:before {
-    content: "*"
-    color: #666666;
-    font-size: 17px;
   }
 
   /* List */
