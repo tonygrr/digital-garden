@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ noteTitle }}</title>
+    <title>{{ collections.gardenEntry[0].fileSlug }}</title>
     {%include "components/pageheader.njk"%}
   </head>
-  <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section">
+  <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered">
     {%include "components/notegrowthhistory.njk"%}
-    {% if settings.dgShowFileTree !== true %}
-      {%include "components/navbar.njk"%}
-    {%else%}
-      {%include "components/filetree.njk"%}
-    {% endif %}
-    {% if settings.dgEnableSearch === true %}
-      {%include "components/searchContainer.njk"%}
-    {% endif %}
-    <div class="content cm-s-obsidian">
+    <div class="content">
 
-      {% if settings.dgShowInlineTitle === true %}
-        <h1>{{ noteTitle  }}</h1>
+      {% if collections.gardenEntry[0].data.dgShowInlineTitle === true %}
+        <h1>{{ collections.gardenEntry[0].fileSlug }}</h1>
       {% endif %}
       {%- for garden in collections.gardenEntry -%}
         {{garden.templateContent | link | highlight | safe }}
       {%- endfor -%}
 
 
-      {%if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true%}
+      {%if collections.gardenEntry[0].data.dgShowBacklinks === true or collections.gardenEntry[0].data.dgShowLocalGraph === true%}
         {%include "components/sidebar.njk" %}
       {%endif%}
       </div>
