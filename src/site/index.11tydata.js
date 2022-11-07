@@ -1,20 +1,15 @@
 
-require("dotenv").config();
-const settings = require("../helpers/constants");
-
 const wikilink = /\[\[(.*?\|.*?)\]\]/g
 
 function caselessCompare(a, b) {
     return a.toLowerCase() === b.toLowerCase();
 }
 
-const allSettings = settings.ALL_NOTE_SETTINGS;
-
 module.exports = {
     eleventyComputed: {
         backlinks: (data) => {
             const notes = data.collections.note;
-            if (!notes) {
+            if(!notes){
                 return [];
             }
             const currentFileSlug = data.page.filePathStem.replace('/notes/', '');
@@ -29,7 +24,6 @@ module.exports = {
                     link.slice(2, -2)
                         .split("|")[0]
                         .replace(/.(md|markdown)\s?$/i, "")
-                        .replace("\\", "")
                         .trim()
                 ));
 
@@ -51,12 +45,12 @@ module.exports = {
         outbound: (data) => {
             const notes = data.collections.note;
 
-            if (!notes || notes.length == 0) {
+            if(!notes || notes.length == 0){
                 return [];
             }
 
             const currentNote = data.collections.gardenEntry && data.collections.gardenEntry[0];
-            if (!currentNote) {
+            if(!currentNote){
                 return [];
             }
 
@@ -69,13 +63,12 @@ module.exports = {
                 link.slice(2, -2)
                     .split("|")[0]
                     .replace(/.(md|markdown)\s?$/i, "")
-                    .replace("\\", "")
                     .trim()
             ));
 
             let outbound = outboundLinks.map(fileslug => {
                 var outboundNote = notes.find(x => caselessCompare(x.data.page.filePathStem.replace("/notes/", ""), fileslug));
-                if (!outboundNote) {
+                if(!outboundNote){
                     return null;
                 }
 
@@ -84,33 +77,25 @@ module.exports = {
                     title: outboundNote.data.page.fileSlug,
                     id: counter++
                 }
-            }).filter(x => x);
+            }).filter(x=>x);
 
             return outbound;
 
         },
-        settings: (data) => {
-            const currentnote = data.collections.gardenEntry && data.collections.gardenEntry[0];
-            if (currentnote && currentnote.data) {
-                const noteSettings = {};
-                allSettings.forEach(setting => {
-                    let noteSetting = currentnote.data[setting];
-                    let globalSetting = process.env[setting];
-
-                    let settingValue = (noteSetting || (globalSetting === 'true' && noteSetting !== false));
-                    noteSettings[setting] = settingValue;
-                });
-                return noteSettings;
-
+        dgShowLocalGraph: (data) => {
+            const currentNote = data.collections.gardenEntry && data.collections.gardenEntry[0];
+            if(currentNote && currentNote.data && currentNote.data.dgShowLocalGraph){
+                return true;
             }
-            return {};
+
+            return false;
         },
-        noteTitle: (data) => {
+        dgShowBacklinks: (data) =>{
             const currentnote = data.collections.gardenEntry && data.collections.gardenEntry[0];
-            if (currentnote && currentnote.data) {
-                return currentnote.data.page.fileSlug;
+            if(currentnote && currentnote.data && currentnote.data.dgShowLocalGraph){
+                    return true;
             }
-            return "";
+            return false;
         }
     }
 }
