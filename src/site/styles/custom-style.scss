@@ -31,7 +31,8 @@ body {
   /* Общая настройка */
   .content {
     max-width: 875px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     font-family: 'PT Mono', monospace;
     line-height: 1.4;
@@ -148,7 +149,7 @@ body {
   }
       
   /* --- */
- /*  hr {
+  hr {
     display: block;
     unicode-bidi: isolate;
     margin-block-start: 0.5em;
@@ -159,7 +160,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-bottom: hidden;
-  } */
+  }
   
   /* Images */
   img {
