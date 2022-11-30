@@ -3,6 +3,8 @@
 ---
 
 
+- mathcad file: [RC.xmcd](file:///C:%5CUsers%5CMojo%5CiCloudDrive%5C_university%5CMineev%5CRC.xmcd)
+
 # =ex Переходный процесс в RC-цепи 1-го порядка
 
 - Дано:
@@ -46,11 +48,11 @@
 			- $X_{частн. неоднор.}(t)=A(t)\cdot e^{pt}=A(t)\cdot e^{-\dfrac{t}{\tau}}$
 				- $A(t)$ связана с функцией воздействия:
 					- $\displaystyle A(t)=\int_{0}^{t} \dfrac{f(\xi)}{a_{0}}e^{\dfrac{\xi}{\tau}} \, d\xi$
-		- $\displaystyle X(t) = U_{c} = X(0)\cdot e^{-\dfrac{t}{\tau}}+\dfrac{1}{a_{0}}e^{-\dfrac{t}{\tau}}\int_{0}^{t} f(\xi)e^{\dfrac{\xi}{\tau}} \, d\xi$
+		- $\displaystyle X(t) = U_{c}(t) = U_{c}(0)\cdot e^{-\dfrac{t}{\tau}}+\dfrac{1}{a_{0}}e^{-\dfrac{t}{\tau}}\int_{0}^{t} f(\xi)e^{\dfrac{\xi}{\tau}} \, d\xi$
 	- Решим полученный интеграл.
 		- Для этого зададимся нулевыми начальными условиями:
-			- $X(0)=0$
-		- Функция $f(\xi)=J=1$ — почему так, не очень понятно.
+			- $U_{c}(0)=0$
+		- Функция $f(\xi)=J_{0}=1$ — почему так, не очень понятно.
 		- Тогда:
 			- $\displaystyle U_{c}=\dfrac{1}{a_{0}}\cdot e^{-\dfrac{t}{\tau}}\int_{0}^{t} J e^{\dfrac{\xi}{\tau}} \, d\xi=\dfrac{1}{a_{0}}e^{-\dfrac{t}{\tau}}\left( e^{\dfrac{\xi}{\tau}} \right)\bigg{|}_{0}^{t}=\dfrac{1}{a_{0}}e^{-\dfrac{t}{\tau}}\left( e^{\dfrac{t}{\tau}} -1 \right)=\dfrac{R_{2}}{C(R_{2}+R_{1})}\left( 1+e^{\dfrac{t}{\tau}} \right)$
 	- Найдём выходное напряжение:
