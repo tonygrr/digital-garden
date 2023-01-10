@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-radio-engineering/m-radiopriyomnoe-ustrojstvo/","title":"=m Радиоприёмное устройство"}
+{"dg-publish":true,"permalink":"/7-radio-engineering/m-radiopriyomnoe-ustrojstvo/","title":"=m Радиоприёмное устройство","tags":["moc","рпру"]}
 ---
 
 
