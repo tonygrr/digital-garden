@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-radio-engineering/m-radiotehnicheskie-czepi-i-signaly/perehodnyj-proczess-v-elektricheskoj-czepi/ex-perehodnyj-proczess-v-rl-czepi-1-go-poryadka/ex-perehodnyj-proczess-v-rl-czepi-1-go-poryadka/","title":"=ex Переходный процесс в RL-цепи 1-го порядка"}
+{"dg-publish":true,"permalink":"/7-radio-engineering/m-radiotehnicheskie-czepi-i-signaly/perehodnyj-proczess-v-elektricheskoj-czepi/ex-perehodnyj-proczess-v-rl-czepi-1-go-poryadka/ex-perehodnyj-proczess-v-rl-czepi-1-go-poryadka/","title":"=ex Переходный процесс в RL-цепи 1-го порядка","tags":["рцс"]}
 ---
 
 
