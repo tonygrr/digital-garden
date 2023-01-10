@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-radio-engineering/m-radiotehnicheskie-czepi-i-signaly/m-radiotehnicheskie-czepi-i-signaly/","title":"=m Радиотехнические цепи и сигналы"}
+{"dg-publish":true,"permalink":"/7-radio-engineering/m-radiotehnicheskie-czepi-i-signaly/m-radiotehnicheskie-czepi-i-signaly/","title":"=m Радиотехнические цепи и сигналы","tags":["рцс"]}
 ---
 
 
