@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-radio-engineering/matricza-s-parametrov/","title":"Матрица S-параметров"}
+{"dg-publish":true,"permalink":"/7-radio-engineering/matricza-s-parametrov/","title":"Матрица S-параметров","tags":["свч"]}
 ---
 
 
