@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-radio-engineering/mojo-risin/","tags":"gardenEntry"}
+{"dg-publish":true,"permalink":"/7-radio-engineering/mojo-risin/","tags":["gardenEntry"]}
 ---
 
 
