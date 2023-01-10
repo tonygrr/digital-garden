@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-radio-engineering/m-matematicheskie-metody-prikladnoj-elektrodinamiki/","title":"=m Математические методы прикладной электродинамики"}
+{"dg-publish":true,"permalink":"/7-radio-engineering/m-matematicheskie-metody-prikladnoj-elektrodinamiki/","title":"=m Математические методы прикладной электродинамики","tags":["moc","ммпэд","электродинамика"]}
 ---
 
 
