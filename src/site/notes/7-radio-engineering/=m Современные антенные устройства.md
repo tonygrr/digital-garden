@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-radio-engineering/m-sovremennye-antennye-ustrojstva/","title":"=m Современные антенные устройства","tags":["антенны"]}
+{"dg-publish":true,"permalink":"/7-radio-engineering/m-sovremennye-antennye-ustrojstva/","title":"=m Современные антенные устройства","tags":["антенны"],"dgShowInlineTitle":true,"dgShowToc":true}
 ---
 
 
